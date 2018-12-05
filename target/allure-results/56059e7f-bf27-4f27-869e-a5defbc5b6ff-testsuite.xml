@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1540506676880" stop="1540506679661" version="1.4.15" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Verify favorites empty state text</name>
+    <title>Verify favorites empty state text</title>
+    <test-cases>
+        <test-case start="1540506676904" stop="1540506676907" status="passed">
+            <name>When I click on skip button</name>
+            <title>When I click on skip button</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Yuliyas-MBP"/>
+                <label name="thread" value="6393@Yuliyas-MBP.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1540506678856" stop="1540506678856" status="passed">
+            <name>And I click on favorites button</name>
+            <title>And I click on favorites button</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Yuliyas-MBP"/>
+                <label name="thread" value="6393@Yuliyas-MBP.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1540506679658" stop="1540506679658" status="passed">
+            <name>Then I verify No Sessions Found text displayed</name>
+            <title>Then I verify No Sessions Found text displayed</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Yuliyas-MBP"/>
+                <label name="thread" value="6393@Yuliyas-MBP.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="story" value="Verify favorites empty state text"/>
+        <label name="feature" value="Mobile Login Feature"/>
+        <label name="framework" value="CucumberJVM"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
