@@ -26,4 +26,6 @@ public class LoginPage extends MobileBasePage {
     public void tapOnSignInButton() {
         tapOn(signInButton);
     }
+
+
 }

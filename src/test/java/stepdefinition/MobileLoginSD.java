@@ -1,5 +1,6 @@
 package stepdefinition;
 
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import framework.mobile_pages.LandingPage;
@@ -28,7 +29,6 @@ public class MobileLoginSD {
         Assert.assertTrue(landingPage.isMenuPresent());
     }
 
-
     @When("^I click on favorites button$")
     public void clickOnFavoritesButton() {
         landingPage.clickOnFavorits();
@@ -37,6 +37,19 @@ public class MobileLoginSD {
     @Then("^I verify No Sessions Found text displayed$")
     public void verifyText(){
         Assert.assertTrue(landingPage.verifyText());
-        //landingPage.verifyText();
+    }
+
+    @Given("^I am on Splash screen of the ionic conference app$")
+    public void goToSplashScreen(){
+    }
+
+    @When("^I swipe right (.+) times on tutorials slides$")
+    public void swipeRight(int times){
+        landingPage.swipeHorizontally( times);
+    }
+
+    @Then("^I verify Continue button is displayed$")
+    public void verifyContinueButton(){
+       Assert.assertTrue(landingPage.getContinueButton());
     }
 }

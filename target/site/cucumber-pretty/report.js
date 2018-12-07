@@ -1,238 +1,71 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("hotel-search.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("mobile-login.feature");
 formatter.feature({
-  "line": 2,
-  "name": "Hotel Search Feature",
-  "description": "",
-  "id": "hotel-search-feature",
-  "keyword": "Feature",
-  "tags": [
+  "comments": [
     {
       "line": 1,
-      "name": "@hotel-regression"
-    },
-    {
-      "line": 1,
-      "name": "@hotel-search"
+      "value": "#@mobile-regression @mobile-login @mobile"
     }
-  ]
-});
-formatter.background({
-  "line": 4,
-  "name": "",
+  ],
+  "line": 2,
+  "name": "Mobile Login Feature",
   "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 5,
-  "name": "I am on hotel website homepage",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "HotelsSD.iAmOnHotelHomePage()"
-});
-formatter.result({
-  "duration": 294021389,
-  "status": "passed"
+  "id": "mobile-login-feature",
+  "keyword": "Feature"
 });
 formatter.scenario({
-  "line": 8,
-  "name": "Verify deal of the day price amount",
+  "line": 18,
+  "name": "Verify user should be able to slide right on tutorial pages",
   "description": "",
-  "id": "hotel-search-feature;verify-deal-of-the-day-price-amount",
+  "id": "mobile-login-feature;verify-user-should-be-able-to-slide-right-on-tutorial-pages",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 7,
-      "name": "@hotel-search-1"
+      "line": 17,
+      "name": "@mobile-slide"
     }
   ]
 });
 formatter.step({
-  "line": 9,
-  "name": "I enter destination as New",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "I select destination as New York, New York, United",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 11,
-  "name": "I select checking date as 1 and checkout date as 8",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 12,
-  "name": "I click on room",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 13,
-  "name": "I select more options",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 14,
-  "name": "I select room as 1",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 15,
-  "name": "I select adult as 2",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 16,
-  "name": "I select children as 2",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 17,
-  "name": "I select child one as 2",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 18,
-  "name": "I select child two as 3",
-  "keyword": "And "
-});
-formatter.step({
   "line": 19,
-  "name": "I click on search button",
-  "keyword": "And "
+  "name": "I am on Splash screen of the ionic conference app",
+  "keyword": "Given "
 });
 formatter.step({
   "line": 20,
-  "name": "I verify deal of the day hotel price is between 200 to 300",
+  "name": "I swipe right 3 times on tutorials slides",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 21,
+  "name": "I verify Continue button is displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "New",
-      "offset": 23
-    }
-  ],
-  "location": "HotelsSearchSD.enterDestination(String)"
+  "location": "MobileLoginSD.goToSplashScreen()"
 });
 formatter.result({
-  "duration": 237846154,
-  "error_message": "java.lang.NullPointerException\n\tat framework.BasePage.sendText(BasePage.java:32)\n\tat framework.web_pages.HotelLandingPage.enterDestination(HotelLandingPage.java:26)\n\tat stepdefinition.HotelsSearchSD.enterDestination(HotelsSearchSD.java:13)\n\tat ✽.When I enter destination as New(hotel-search.feature:9)\n",
-  "status": "failed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "New York, New York, United",
-      "offset": 24
-    }
-  ],
-  "location": "HotelsSearchSD.chooseDestination(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 26
-    },
-    {
-      "val": "8",
-      "offset": 49
-    }
-  ],
-  "location": "HotelsSearchSD.clickOnCalendar(int,int)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "HotelsSearchSD.clickOnRoom()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "HotelsSearchSD.selectMoreOptions()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 17
-    }
-  ],
-  "location": "HotelsSearchSD.selectRooms(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "2",
-      "offset": 18
-    }
-  ],
-  "location": "HotelsSearchSD.selectAdult(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "2",
-      "offset": 21
-    }
-  ],
-  "location": "HotelsSearchSD.selectChildren(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "2",
-      "offset": 22
-    }
-  ],
-  "location": "HotelsSearchSD.selectChildOne(String)"
-});
-formatter.result({
-  "status": "skipped"
+  "duration": 17074464567,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "3",
-      "offset": 22
+      "offset": 14
     }
   ],
-  "location": "HotelsSearchSD.selectChildTwo(String)"
+  "location": "MobileLoginSD.swipeRight(int)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 15065070100,
+  "status": "passed"
 });
 formatter.match({
-  "location": "HotelsSearchSD.clickOnSearchButton()"
+  "location": "MobileLoginSD.verifyContinueButton()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "HotelsSearchSD.verifyDealPrice()"
-});
-formatter.result({
-  "status": "skipped"
+  "duration": 680949023,
+  "status": "passed"
 });
 });

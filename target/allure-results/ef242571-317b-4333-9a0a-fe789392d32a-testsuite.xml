@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1544146608122" stop="1544146624024" version="1.4.15" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Verify user should be able to slide right on tutorial pages</name>
+    <title>Verify user should be able to slide right on tutorial pages</title>
+    <test-cases>
+        <test-case start="1544146608153" stop="1544146608156" status="passed">
+            <name>Given I am on Splash screen of the ionic conference app</name>
+            <title>Given I am on Splash screen of the ionic conference app</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Yuliyas-MacBook-Pro.local"/>
+                <label name="thread" value="65100@Yuliyas-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1544146623333" stop="1544146623333" status="passed">
+            <name>When I swipe right 3 times on tutorials slides</name>
+            <title>When I swipe right 3 times on tutorials slides</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Yuliyas-MacBook-Pro.local"/>
+                <label name="thread" value="65100@Yuliyas-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1544146624018" stop="1544146624018" status="passed">
+            <name>Then I verify Continue button is displayed</name>
+            <title>Then I verify Continue button is displayed</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Yuliyas-MacBook-Pro.local"/>
+                <label name="thread" value="65100@Yuliyas-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="story" value="Verify user should be able to slide right on tutorial pages"/>
+        <label name="feature" value="Mobile Login Feature"/>
+        <label name="framework" value="CucumberJVM"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
