@@ -13,59 +13,77 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenario({
-  "line": 18,
-  "name": "Verify user should be able to slide right on tutorial pages",
+  "line": 24,
+  "name": "User should be able filter options",
   "description": "",
-  "id": "mobile-login-feature;verify-user-should-be-able-to-slide-right-on-tutorial-pages",
+  "id": "mobile-login-feature;user-should-be-able-filter-options",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 17,
-      "name": "@mobile-slide"
+      "line": 23,
+      "name": "@mobile-filter"
     }
   ]
 });
 formatter.step({
-  "line": 19,
-  "name": "I am on Splash screen of the ionic conference app",
+  "line": 25,
+  "name": "I am on a home page of the app",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 20,
-  "name": "I swipe right 3 times on tutorials slides",
+  "line": 26,
+  "name": "I click on filter button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 21,
-  "name": "I verify Continue button is displayed",
+  "line": 27,
+  "name": "I disable Angular option",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 28,
+  "name": "I click on All Reset Filer button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 29,
+  "name": "I verify all options are enabled",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "MobileLoginSD.goToSplashScreen()"
+  "location": "MobileLoginSD.goToHomePage()"
 });
 formatter.result({
-  "duration": 17074464567,
+  "duration": 18299769002,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "3",
-      "offset": 14
-    }
-  ],
-  "location": "MobileLoginSD.swipeRight(int)"
+  "location": "MobileLoginSD.tapOnFilter()"
 });
 formatter.result({
-  "duration": 15065070100,
+  "duration": 2050814042,
   "status": "passed"
 });
 formatter.match({
-  "location": "MobileLoginSD.verifyContinueButton()"
+  "location": "MobileLoginSD.disableAngular()"
 });
 formatter.result({
-  "duration": 680949023,
+  "duration": 1294236046,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MobileLoginSD.clickOnResetFilter()"
+});
+formatter.result({
+  "duration": 1075148170,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MobileLoginSD.verifyAllOptions()"
+});
+formatter.result({
+  "duration": 759426955,
   "status": "passed"
 });
 });

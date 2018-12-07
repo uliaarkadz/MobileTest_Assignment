@@ -26,6 +26,18 @@ public class LandingPage extends MobileBasePage {
     @AndroidFindBy(xpath = "//android.widget.Button[@content-desc='CONTINUE arrow forward ']")
     private MobileElement continueButton;
 
+    @AndroidFindBy(xpath = "//android.widget.Button[@content-desc='options ']")
+    private MobileElement filterButton;
+
+    @AndroidFindBy(xpath = "//android.widget.CheckBox[@content-desc='Angular']")
+    private MobileElement angularButton;
+
+    @AndroidFindBy(xpath = "//android.widget.Button[@content-desc='Reset All Filters ']")
+    private MobileElement resetFilterButton;
+
+    @AndroidFindBy(xpath = "//android.webkit.WebView/android.view.View[@content-desc='Angular']//following-sibling::android.widget.CheckBox")
+    private MobileElement allOptions;
+
 
     public void tapOnSkipButton() {
         tapOn(yesButton);
@@ -57,5 +69,25 @@ public class LandingPage extends MobileBasePage {
 
     public boolean getContinueButton() {
         return isElementDisplayed(continueButton);
+    }
+
+    public void getHomePage() {
+        tapOn(yesButton);
+    }
+
+    public void tapOnFilter() {
+        tapOn(filterButton);
+    }
+
+    public void tapOnAngular() {
+        tapOn(angularButton);
+    }
+
+    public void clickOnResetFilterButton() {
+        tapOn(resetFilterButton);
+    }
+
+    public boolean verifyOoptionsEnabled() {
+        return disableButton(allOptions);
     }
 }

@@ -115,7 +115,7 @@ public class MobileBasePage {
         return text;
     }
 
-    public void swipeScreenHorizontally(int times) {
+    protected void swipeScreenHorizontally(int times) {
 
         Dimension size = AppiumWrapper.getAppiumDriver().manage().window().getSize();
         int anchor = size.height / 2;
@@ -132,6 +132,21 @@ public class MobileBasePage {
         }
         for (int i = 0; i < times; i++) {
             touchAction.press(startPoint, anchor).moveTo(endPoint, anchor).release().perform();
+        }
+    }
+
+    protected boolean disableButton(MobileElement mobileElement) {
+        try {
+            boolean status;
+            status = mobileElement.isEnabled();
+            if (status == true)
+                return true;
+            else {
+                return false;
+            }
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+            throw new NoSuchElementException("Unable to locate the Element using: " + mobileElement.toString());
         }
     }
 
