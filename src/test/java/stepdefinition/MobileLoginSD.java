@@ -1,5 +1,6 @@
 package stepdefinition;
 
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import framework.mobile_pages.LandingPage;
@@ -28,15 +29,52 @@ public class MobileLoginSD {
         Assert.assertTrue(landingPage.isMenuPresent());
     }
 
-
     @When("^I click on favorites button$")
     public void clickOnFavoritesButton() {
         landingPage.clickOnFavorits();
     }
 
     @Then("^I verify No Sessions Found text displayed$")
-    public void verifyText(){
+    public void verifyText() {
         Assert.assertTrue(landingPage.verifyText());
-        //landingPage.verifyText();
+    }
+
+    @Given("^I am on Splash screen of the ionic conference app$")
+    public void goToSplashScreen() {
+    }
+
+    @When("^I swipe right (.+) times on tutorials slides$")
+    public void swipeRight(int times) {
+        landingPage.swipeHorizontally(times);
+    }
+
+    @Then("^I verify Continue button is displayed$")
+    public void verifyContinueButton() {
+        Assert.assertTrue(landingPage.getContinueButton());
+    }
+
+    @Given("^I am on a home page of the app$")
+    public void goToHomePage() {
+        landingPage.tapOnSkipButton();
+    }
+
+    @When("^I click on filter button$")
+    public void tapOnFilter() {
+        landingPage.tapOnFilter();
+    }
+
+    @When("^I disable Angular option$")
+    public void disableAngular() {
+        landingPage.tapOnAngular();
+    }
+
+    @When("^I click on All Reset Filer button$")
+    public void clickOnResetFilter() {
+        landingPage.clickOnResetFilterButton();
+    }
+
+    @Then("^I verify all options are enabled$")
+    public void verifyAllOptions() {
+        Assert.assertTrue(landingPage.verifyOoptionsEnabled());
     }
 }
