@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef2e1e91-853d-42f6-93ed-4e65edc90265" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../cucumber_demo_framework_BY" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/framework/MobileBasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/framework/MobileBasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/framework/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/framework/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/framework/mobile_pages/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/framework/mobile_pages/LandingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinition/MobileLoginSD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinition/MobileLoginSD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/mobile-login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/mobile-login.feature" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +18,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.6519097">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="MobileLoginSD.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="MobileLoginSD.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/stepdefinition/MobileLoginSD.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="400">
-                  <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+                <state relative-caret-position="175">
+                  <caret line="66" column="34" lean-forward="true" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
                   <folding>
                     <element signature="e#1036#1037#0" expanded="true" />
                     <element signature="e#1095#1096#0" expanded="true" />
@@ -34,26 +30,30 @@
                     <element signature="e#1358#1359#0" expanded="true" />
                     <element signature="e#1453#1454#0" expanded="true" />
                     <element signature="e#1519#1520#0" expanded="true" />
-                    <element signature="e#1599#1600#0" expanded="true" />
-                    <element signature="e#1644#1645#0" expanded="true" />
+                    <element signature="e#1600#1601#0" expanded="true" />
+                    <element signature="e#1645#1646#0" expanded="true" />
                     <element signature="e#1718#1719#0" expanded="true" />
-                    <element signature="e#1736#1737#0" expanded="true" />
-                    <element signature="e#1824#1825#0" expanded="true" />
-                    <element signature="e#1866#1867#0" expanded="true" />
-                    <element signature="e#1958#1959#0" expanded="true" />
-                    <element signature="e#2012#2013#0" expanded="true" />
-                    <element signature="e#2097#2098#0" expanded="true" />
-                    <element signature="e#2118#2119#0" expanded="true" />
+                    <element signature="e#1759#1760#0" expanded="true" />
+                    <element signature="e#1877#1878#0" expanded="true" />
+                    <element signature="e#1966#1967#0" expanded="true" />
+                    <element signature="e#2020#2021#0" expanded="true" />
+                    <element signature="e#2106#2107#0" expanded="true" />
+                    <element signature="e#2176#2177#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
           <file leaf-file-name="MobileBasePage.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/framework/MobileBasePage.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="250">
-                  <caret line="146" column="9" selection-start-line="146" selection-start-column="9" selection-end-line="146" selection-end-column="9" />
+                <state relative-caret-position="193">
+                  <caret line="129" column="42" selection-end-line="157" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -64,8 +64,8 @@
           <file leaf-file-name="LandingPage.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/framework/mobile_pages/LandingPage.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="355">
-                  <caret line="90" column="17" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
+                <state relative-caret-position="-568">
+                  <caret line="33" selection-end-line="93" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#1779#1780#0" expanded="true" />
@@ -84,16 +84,16 @@
                     <element signature="e#2329#2330#0" expanded="true" />
                     <element signature="e#1700#1701#0" expanded="true" />
                     <element signature="e#1757#1758#0" expanded="true" />
-                    <element signature="e#1788#1789#0" expanded="true" />
-                    <element signature="e#1820#1821#0" expanded="true" />
+                    <element signature="e#2351#2352#0" expanded="true" />
+                    <element signature="e#2383#2384#0" expanded="true" />
                     <element signature="e#1856#1857#0" expanded="true" />
                     <element signature="e#1894#1895#0" expanded="true" />
                     <element signature="e#2276#2277#0" expanded="true" />
                     <element signature="e#2312#2313#0" expanded="true" />
-                    <element signature="e#2495#2496#0" expanded="true" />
-                    <element signature="e#2510#2511#0" expanded="true" />
-                    <element signature="e#2751#2752#0" expanded="true" />
-                    <element signature="e#2798#2799#0" expanded="true" />
+                    <element signature="e#2567#2568#0" expanded="true" />
+                    <element signature="e#2607#2608#0" expanded="true" />
+                    <element signature="e#2653#2654#0" expanded="true" />
+                    <element signature="e#2701#2702#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -103,20 +103,20 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="mobile-login.feature" pinned="false" current-in-tab="false">
+          <file leaf-file-name="mobile-login.feature" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/resources/features/mobile-login.feature">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="317">
-                  <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="16" />
+                <state relative-caret-position="375">
+                  <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="TestRunner.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="TestRunner.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/framework/TestRunner.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="210">
-                  <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+                  <caret line="16" column="31" selection-end-line="23" />
                 </state>
               </provider>
             </entry>
@@ -139,10 +139,10 @@
         <option value="$PROJECT_DIR$/config.properties" />
         <option value="$PROJECT_DIR$/src/test/java/framework/mobile_pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/framework/MobileBasePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/framework/mobile_pages/LandingPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/stepdefinition/MobileLoginSD.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/mobile-login.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/framework/mobile_pages/LandingPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/framework/MobileBasePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepdefinition/MobileLoginSD.java" />
         <option value="$PROJECT_DIR$/src/test/java/framework/TestRunner.java" />
       </list>
     </option>
@@ -197,47 +197,66 @@
               <item name="MobileTest_Assignment" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com.cucumber.sample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MobileTest_Assignment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile_pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com.cucumber.sample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MobileTest_Assignment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="stepdefinition" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com.cucumber.sample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MobileTest_Assignment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="com.cucumber.sample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MobileTest_Assignment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="com.cucumber.sample" type="b2602c69:ProjectViewProjectNode" />
               <item name="MobileTest_Assignment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.cucumber.sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileTest_Assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="allure-results" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.cucumber.sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileTest_Assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-test-sources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.cucumber.sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileTest_Assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="maven-status" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.cucumber.sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileTest_Assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="maven-status" type="462c0819:PsiDirectoryNode" />
+              <item name="maven-compiler-plugin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.cucumber.sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileTest_Assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.cucumber.sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileTest_Assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="cucumber-pretty" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.cucumber.sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileTest_Assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="surefire-reports" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.cucumber.sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileTest_Assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.cucumber.sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
           </expand>
           <select />
@@ -347,18 +366,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestRunner - 2018.12.06 at 19h 40m 35s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestRunner - 2018.12.06 at 19h 42m 18s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestRunner - 2018.12.06 at 19h 44m 13s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestRunner - 2018.12.06 at 19h 45m 14s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestRunner - 2018.12.06 at 19h 58m 48s.xml">
       <configuration name="TestRunner" configurationId="JUnit" />
     </history-entry>
@@ -377,10 +384,21 @@
     <history-entry file="TestRunner - 2018.12.06 at 20h 33m 17s.xml">
       <configuration name="TestRunner" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestRunner - 2018.12.06 at 21h 30m 14s.xml">
+      <configuration name="TestRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRunner - 2018.12.06 at 21h 31m 51s.xml">
+      <configuration name="TestRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRunner - 2018.12.06 at 21h 33m 01s.xml">
+      <configuration name="TestRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRunner - 2018.12.06 at 21h 33m 58s.xml">
+      <configuration name="TestRunner" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="23" width="1361" height="797" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -392,10 +410,10 @@
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32962963" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3293944" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3293944" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49958506" visible="true" weight="0.22895126" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49958506" visible="true" weight="0.22895126" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12661107" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23654284" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -440,16 +458,15 @@
             <element signature="e#1358#1359#0" expanded="true" />
             <element signature="e#1453#1454#0" expanded="true" />
             <element signature="e#1519#1520#0" expanded="true" />
-            <element signature="e#1599#1600#0" expanded="true" />
-            <element signature="e#1644#1645#0" expanded="true" />
+            <element signature="e#1600#1601#0" expanded="true" />
+            <element signature="e#1645#1646#0" expanded="true" />
             <element signature="e#1718#1719#0" expanded="true" />
-            <element signature="e#1736#1737#0" expanded="true" />
-            <element signature="e#1824#1825#0" expanded="true" />
-            <element signature="e#1866#1867#0" expanded="true" />
-            <element signature="e#1958#1959#0" expanded="true" />
-            <element signature="e#2012#2013#0" expanded="true" />
-            <element signature="e#2097#2098#0" expanded="true" />
-            <element signature="e#2118#2119#0" expanded="true" />
+            <element signature="e#1759#1760#0" expanded="true" />
+            <element signature="e#1877#1878#0" expanded="true" />
+            <element signature="e#1966#1967#0" expanded="true" />
+            <element signature="e#2020#2021#0" expanded="true" />
+            <element signature="e#2106#2107#0" expanded="true" />
+            <element signature="e#2176#2177#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -486,16 +503,16 @@
             <element signature="e#2329#2330#0" expanded="true" />
             <element signature="e#1700#1701#0" expanded="true" />
             <element signature="e#1757#1758#0" expanded="true" />
-            <element signature="e#1788#1789#0" expanded="true" />
-            <element signature="e#1820#1821#0" expanded="true" />
+            <element signature="e#2351#2352#0" expanded="true" />
+            <element signature="e#2383#2384#0" expanded="true" />
             <element signature="e#1856#1857#0" expanded="true" />
             <element signature="e#1894#1895#0" expanded="true" />
             <element signature="e#2276#2277#0" expanded="true" />
             <element signature="e#2312#2313#0" expanded="true" />
-            <element signature="e#2495#2496#0" expanded="true" />
-            <element signature="e#2510#2511#0" expanded="true" />
-            <element signature="e#2751#2752#0" expanded="true" />
-            <element signature="e#2798#2799#0" expanded="true" />
+            <element signature="e#2567#2568#0" expanded="true" />
+            <element signature="e#2607#2608#0" expanded="true" />
+            <element signature="e#2653#2654#0" expanded="true" />
+            <element signature="e#2701#2702#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -578,20 +595,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/framework/MobileBasePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="146" column="9" selection-start-line="146" selection-start-column="9" selection-end-line="146" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/framework/mobile_pages/LandingPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="90" column="17" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
+        <state relative-caret-position="-568">
+          <caret line="33" selection-end-line="93" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1779#1780#0" expanded="true" />
@@ -610,24 +617,48 @@
             <element signature="e#2329#2330#0" expanded="true" />
             <element signature="e#1700#1701#0" expanded="true" />
             <element signature="e#1757#1758#0" expanded="true" />
-            <element signature="e#1788#1789#0" expanded="true" />
-            <element signature="e#1820#1821#0" expanded="true" />
+            <element signature="e#2351#2352#0" expanded="true" />
+            <element signature="e#2383#2384#0" expanded="true" />
             <element signature="e#1856#1857#0" expanded="true" />
             <element signature="e#1894#1895#0" expanded="true" />
             <element signature="e#2276#2277#0" expanded="true" />
             <element signature="e#2312#2313#0" expanded="true" />
-            <element signature="e#2495#2496#0" expanded="true" />
-            <element signature="e#2510#2511#0" expanded="true" />
-            <element signature="e#2751#2752#0" expanded="true" />
-            <element signature="e#2798#2799#0" expanded="true" />
+            <element signature="e#2567#2568#0" expanded="true" />
+            <element signature="e#2607#2608#0" expanded="true" />
+            <element signature="e#2653#2654#0" expanded="true" />
+            <element signature="e#2701#2702#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/framework/MobileBasePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="129" column="42" selection-end-line="157" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/framework/TestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="31" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/mobile-login.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stepdefinition/MobileLoginSD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+        <state relative-caret-position="175">
+          <caret line="66" column="34" lean-forward="true" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
           <folding>
             <element signature="e#1036#1037#0" expanded="true" />
             <element signature="e#1095#1096#0" expanded="true" />
@@ -635,33 +666,21 @@
             <element signature="e#1358#1359#0" expanded="true" />
             <element signature="e#1453#1454#0" expanded="true" />
             <element signature="e#1519#1520#0" expanded="true" />
-            <element signature="e#1599#1600#0" expanded="true" />
-            <element signature="e#1644#1645#0" expanded="true" />
+            <element signature="e#1600#1601#0" expanded="true" />
+            <element signature="e#1645#1646#0" expanded="true" />
             <element signature="e#1718#1719#0" expanded="true" />
-            <element signature="e#1736#1737#0" expanded="true" />
-            <element signature="e#1824#1825#0" expanded="true" />
-            <element signature="e#1866#1867#0" expanded="true" />
-            <element signature="e#1958#1959#0" expanded="true" />
-            <element signature="e#2012#2013#0" expanded="true" />
-            <element signature="e#2097#2098#0" expanded="true" />
-            <element signature="e#2118#2119#0" expanded="true" />
+            <element signature="e#1759#1760#0" expanded="true" />
+            <element signature="e#1877#1878#0" expanded="true" />
+            <element signature="e#1966#1967#0" expanded="true" />
+            <element signature="e#2020#2021#0" expanded="true" />
+            <element signature="e#2106#2107#0" expanded="true" />
+            <element signature="e#2176#2177#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/mobile-login.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/framework/TestRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
