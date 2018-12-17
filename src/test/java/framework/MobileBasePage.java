@@ -1,17 +1,20 @@
 package framework;
 
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-import stepdefinition.SharedSD;
 
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.PageFactory;
+
+import java.time.Duration;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import static framework.AppiumWrapper.getAppiumDriver;
+
 public class MobileBasePage {
+
 
     /**
      * This is a constructor which initializes initPageElements()
@@ -25,7 +28,7 @@ public class MobileBasePage {
      * during test then the app will re-try and wait up to 15 seconds before failing the test step
      */
     protected void initPageElements() {
-        PageFactory.initElements(new AppiumFieldDecorator(AppiumWrapper.getAppiumDriver(), 15, TimeUnit.SECONDS), this);
+        PageFactory.initElements(new AppiumFieldDecorator(getAppiumDriver(), Duration.ofSeconds(15)), this);
     }
 
     /**
@@ -65,16 +68,20 @@ public class MobileBasePage {
      * @return
      */
     protected boolean isElementDisplayed(MobileElement mobileElement) {
-        boolean result;
         try {
+            boolean result;
             result = mobileElement.isDisplayed();
+            if (result == true)
+                return true;
+            else {
+                return false;
+            }
         } catch (NoSuchElementException e) {
             e.printStackTrace();
             throw new NoSuchElementException("Unable to locate the Element using: " + mobileElement.toString());
         }
-
-        return result;
     }
+
 
     protected boolean isElementPresent(MobileElement mobileElement) {
         try {
@@ -101,5 +108,56 @@ public class MobileBasePage {
         return text;
     }
 
+    protected void swipeScreenHorizontally(int times) {
+        Dimension size = AppiumWrapper.getAppiumDriver().manage().window().getSize();
+        int anchor = size.height / 2;
+        int startPoint = (int) (size.width * 0.8);
+        int endPoint = (int) (size.width * 0.2);
+        System.out.println("Size: " + size);
+        System.out.println("Start Point: " + startPoint);
+        System.out.println("End Point: " + endPoint);
+        TouchAction touchAction = new TouchAction(AppiumWrapper.getAppiumDriver());
+        try {
+            Thread.sleep(8000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        for (int i = 0; i < times; i++) {
+         //   touchAction.press(startPoint, anchor).moveTo(endPoint, anchor).release().perform();
+        }
+    }
 
+    // protected boolean clickButton(List <MobileElement> alloptions,int selectButton) {
+
+    protected boolean isAllOptionEnabled(List<MobileElement> alloptions) {
+
+        boolean isEnabled = true;
+
+        for (MobileElement option : alloptions) {
+            if (option.isSelected() == false) {
+                isEnabled = false;
+                break;
+            }
+        }
+        return isEnabled;
+    }
+
+    protected boolean isElementEnabled(MobileElement mobileElement) {
+        try {
+            boolean status;
+            status = mobileElement.isEnabled();
+            if (status == true)
+                return true;
+            else {
+                return false;
+            }
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+            throw new NoSuchElementException("Unable to locate the Element using: " + mobileElement.toString());
+        }
+    }
 }
+
+
+
+

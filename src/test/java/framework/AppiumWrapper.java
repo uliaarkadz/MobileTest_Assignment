@@ -3,9 +3,11 @@ package framework;
 import cucumber.api.java.After;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
+import util.ConfigReader;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -27,31 +29,36 @@ public class AppiumWrapper {
         appiumDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 
-    public static AppiumDriver buildAppiumDriver() {
+
+    private static AppiumDriver buildAppiumDriver() throws MalformedURLException {
+        ConfigReader configReader = new ConfigReader();
         AppiumDriver appiumDriver = null;
         String appiumServerURL = "http://0.0.0.0:4723/wd/hub";
-
-        String platformName = "android";
+        String platformName = configReader.getMobilePlatformName();
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
-        capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
+        capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, configReader.getMobileAutomationName());
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platformName);
-        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel_2_API_26");
+        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, configReader.getMobileDeviceName());
         capabilities.setCapability(MobileCapabilityType.NO_RESET, false);
-        capabilities.setCapability(MobileCapabilityType.APP, "/Users/ulia/workspace/ionic-conference-emulator.apk");
-        capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 30000);
-        capabilities.setCapability("appActivity", "com.applause.automation.ionicconference.MainActivity");
-        capabilities.setCapability("appPackage", "com.applause.automation.ionicconference");
-        capabilities.setCapability("avd","Pixel_2_API_26");
+        capabilities.setCapability(MobileCapabilityType.APP, configReader.getMobileAppPath());
+        capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 90000);
 
-        try {
+        if (platformName.equals("ios")) {
+            capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, configReader.getMobileVersion());
+            appiumDriver = new IOSDriver(new URL(appiumServerURL), capabilities);
+        } else if (platformName.equals("android")) {
+            //Keeping this here for now incase if we need to use it some point
+            capabilities.setCapability("appActivity", "com.applause.automation.ionicconference.MainActivity");
+            capabilities.setCapability("appPackage", "com.applause.automation.ionicconference");
             appiumDriver = new AndroidDriver(new URL(appiumServerURL), capabilities);
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
+        } else {
+            throw new UnsupportedOperationException("Invalid Platform Name" + platformName);
         }
 
         return appiumDriver;
     }
+
 
     /**
      * This will start an Appium server and return an Appium driver (or initialize it if it's not initialized)
